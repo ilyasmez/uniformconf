@@ -28,6 +28,7 @@
     "pull:context": "run-s pull:context:signals pull:context:enrichments pull:context:quirks pull:context:tests pull:context:aggregates",
     "push:compositions": "uniform presentation composition push ./data/canvas/compositions",
     "push:components": "uniform presentation component push ./data/canvas/components",
+    "fetch:figma:components": "node figma-canvas-magic/index.js",
     "package": "run-s package:canvas package:context",
     "package:canvas": "run-s package:components package:compositions",
     "package:compositions": "uniform presentation composition pull ./data/uniformconf.yaml",
