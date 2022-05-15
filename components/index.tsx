@@ -12,8 +12,9 @@ import { Talk } from "./Talk";
 import { RegisterForm } from "./RegisterForm";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { withFigmaComponents } from ".figma";
 
-const mappings: ComponentMapping = {
+const mappings: ComponentMapping = withFigmaComponents({
   hero: Hero,
   talklist: TalkList,
   talk: Talk,
@@ -21,7 +22,7 @@ const mappings: ComponentMapping = {
   registrationForm: RegisterForm,
   header: Navbar,
   footer: Footer,
-};
+});
 
 type ComponentMapping = Record<string, ComponentType<any>>;
 
